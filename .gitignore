@@ -16,6 +16,7 @@ server/.env
 server/.env.local
 *.env
 *.env.local
+server/__pycache__
 
 # Editor directories and files
 .vscode/*
