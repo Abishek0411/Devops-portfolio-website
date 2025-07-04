@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   const [displayText, setDisplayText] = useState('');
@@ -93,8 +94,13 @@ const HeroSection = () => {
               <span className="mr-2">📄</span>
               View Resume
             </Button>
+            <Link to="/blog">
+            <Button className="neon-button border-cyber-blue text-cyber-dark hover:bg-cyber-blue hover:text-white">
+              Blog Terminal
+            </Button>
+          </Link>
             <Button 
-              className="neon-button border-cyber-purple text-cyber-purple hover:bg-cyber-purple hover:text-cyber-dark"
+              className="neon-button"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <span className="mr-2">💬</span>
